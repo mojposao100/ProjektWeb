@@ -3,7 +3,20 @@
 @import 'base/variables.scss';
 @import 'base/mixins.scss';
 
+body {
+	background: #212429; /* Old browsers */
+	background: -moz-linear-gradient(top, #212429 0%, #212429 25%, #f9f9fb 25%, #f9f9fb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #212429 0%,#212429 25%,#f9f9fb 25%,#f9f9fb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #212429 0%,#212429 25%,#f9f9fb 25%,#f9f9fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
 
+//gazimo bootstrep klasu - i to samo elementa koji ima i navbar i bg-dark klasu; important koristimo kada i bootstrep element ima important pa ga jedino tako možemo pregaziti
+.navbar.bg-dark{
+	background-color: $dark !important;
+}
 
 
 
